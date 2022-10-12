@@ -1,0 +1,10 @@
+
+<h1>contact: <%=@page.contact%></h1>
+<h1>About: <%=@page.about%></h1>
+<h1> Work Experience: <%=@page.work_experience%></h1>
+<h1> Skills: <%=@page.skills%></h1>
+<h1>Education: <%=@page.education%></h1>
+<h1>Hobbies: <%=@page.hobbies%></h1>
+<%= link_to "delete", page_path(@page), data:{ method: :delete, confirm:"Are you sure?"} %>
+<%= link_to "new page", new_page_path%>
+<%= link_to "home", pages_path %>

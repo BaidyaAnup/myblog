@@ -1,0 +1,18 @@
+<h1>Create New Page</h1>
+
+<%= form_with model: @page, url: pages_path, method: :post, local: true do |f| %>
+  <%= f.label :contact %>
+  <%= f.text_area :contact %>
+  <%= f.label :about %>
+  <%= f.text_area :about %>
+  <%= f.label :skills %>
+  <%= f.text_area :skills %>
+  <%= f.label :work_experience %>
+  <%= f.text_area :work_experience %>
+  <%= f.label :education %>
+  <%= f.text_area :education %>
+  <%= f.label :hobbies %>
+  <%= f.text_area :hobbies %>
+  <%= f.submit %>
+
+<% end %>
